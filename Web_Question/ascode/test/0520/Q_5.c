@@ -2,19 +2,19 @@
 
 int main(void)
 {
-    int a, b, T_case;
+    int a, T_case;
 
     scanf("%d", &T_case);
     while (T_case--)
     {
 
-        scanf("%d%d", &a, &b);
+        scanf("%d", &a);
 
-        for (int y = 0; y < b; y++)
+        for (int y = 0; y < a; y++)
         {
-            for (int x = 0; x < a; x++)
+            for (int x = 0; x <= y; x++)
             {
-                if (y == 0 || x == 0 || x == a - 1 || y == b - 1)
+                if (x == y || x == 0 || y == a - 1)
                 {
                     printf("*");
                 }

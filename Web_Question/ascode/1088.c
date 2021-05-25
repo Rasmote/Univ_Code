@@ -12,8 +12,8 @@ int main()
             break;
 
         min = 10000;
-        s
-            max = -10000;
+
+        max = -10000;
 
         for (int i = 0; i < m; i++)
         {

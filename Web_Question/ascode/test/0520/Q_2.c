@@ -2,23 +2,31 @@
 
 int main()
 {
-    int T_case, num, arr[999], m, even;
-    scanf("%d", &T_case);
+    int T_case, num, m, even;
 
+    scanf("%d", &T_case);
     while (T_case--)
     {
         scanf("%d", &num);
-
-        for (int i = 0; i < 999; i++)
+        m = 0;
+        even = 0;
+        while (1)
         {
-            arr[i] = num;
-            if (arr[i] == 1)
+            m++;
+            if (num == 1)
             {
-                m = 1; //하다말음
                 break;
             }
+            else if (num % 2 == 1) // 홀수일때
+            {
+                num = num * 3 + 1;
+            }
+            else if (num % 2 == 0) // 짝수일때
+            {
+                num = num / 2;
+                even++;
+            }
         }
-
         printf("%d %d\n", m, even);
     }
 }
