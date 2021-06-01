@@ -1,19 +1,12 @@
 #include <stdio.h>
-#define SIZE 26
 
 int main()
 {
-    int i;
-    char codes[SIZE];
+    int a;
+    char n1[100] = {0}, n2[100] = {0};
 
-    for (i = 0; i < SIZE; i++)
-    {
-        codes[i] = 'a' + i;
-    }
-
-    for (i = 0; i < SIZE; i++)
-    {
-        printf("%c ", codes[i]);
-    }
-    printf("\n");
+    scanf("%s", &n1);
+    scanf("%s", &n2);
+    a = name - 64;
+    printf("%d", a);
 }
