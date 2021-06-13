@@ -6,7 +6,7 @@
 
 //ascode 1204번
 
-int main()          //미해결
+int main()
 {
     int T_case;
     scanf("%d", &T_case);
@@ -15,24 +15,23 @@ int main()          //미해결
         int price, answer = 0;
         scanf("%d", &price);
 
-        while(price >= 360000)
+        while (price >= 360000)
         {
             price -= 360000;
             answer += 7;
         }
 
-        for (int i = 0; i < 5 || price<=0;i++)
+        for (int i = 0; i < 5 && price > 0; i++)
         {
             price -= 40000;
-            answer += 7;
+            answer += 1;
         }
-        for (int i = 0; i < 2 || price <= 0; i++)
+        for (int i = 0; i < 2 && price > 0; i++)
         {
             price -= 80000;
-            answer += 7;
+            answer += 1;
         }
 
         printf("%d\n", answer);
     }
-    
 }
